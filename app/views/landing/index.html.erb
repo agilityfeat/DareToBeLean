@@ -65,11 +65,39 @@ your startup’s <span class="highlight">Minimum Viable Product</span>.</p>
             <!--SUBMIT FORM-->
             <div class="newsWrap">
                 <span>Sign Up for exclusive news</span>
-                <form action="" method="get">
-                    <input name="email" type="text" value="">
-                    <input class="textSubmit" name="signUp" type="submit" value="">
+                <form method="post" action="https://app.icontact.com/icp/signup.php" name="icpsignup" id="icpsignup4582" accept-charset="UTF-8" onsubmit="return verifyRequired4582();" >
+					<input type="hidden" name="redirect" value="http://www.icontact.com/www/signup/thanks.html">
+					<input type="hidden" name="errorredirect" value="http://www.icontact.com/www/signup/error.html">
+                    <input type="text" name="fields_email">
+					<input type="hidden" name="listid" value="48291">
+				    <input type="hidden" name="specialid:48291" value="S0QU">
+
+				    <input type="hidden" name="clientid" value="1114384">
+				    <input type="hidden" name="formid" value="4582">
+				    <input type="hidden" name="reallistid" value="1">
+				    <input type="hidden" name="doubleopt" value="1">
+                    <input class="textSubmit" name="Submit" type="submit" value="">
                 </form>
             </div>
+
+			<script type="text/javascript">
+
+			var icpForm4582 = document.getElementById('icpsignup4582');
+
+			if (document.location.protocol === "https:")
+
+				icpForm4582.action = "https://app.icontact.com/icp/signup.php";
+			function verifyRequired4582() {
+			  if (icpForm4582["fields_email"].value == "") {
+			    icpForm4582["fields_email"].focus();
+			    alert("The Email field is required.");
+			    return false;
+			  }
+
+
+			return true;
+			}
+			</script>
             <!--SUBMIT FORM-->
             
         </article>
