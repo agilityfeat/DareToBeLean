@@ -123,7 +123,6 @@ your startup’s <span class="highlight">Minimum Viable Product</span>.</p>
 	<section id="third" class="story" data-speed="8" data-type="background" data-offsetY="250">    	
         <div class="storyHeader" data-type="sprite" data-offsetY="-780" data-Xposition="50%" data-speed="-2"></div>		
 		<article>
-        	
 			<form class="container" method="post" action="https://app.icontact.com/icp/signup.php" name="icpsignup" id="icpsignup4620" accept-charset="UTF-8" onsubmit="return verifyRequired4620();" >
 				<input type="hidden" name="redirect" value="http://www.icontact.com/www/signup/thanks.html">
 				<input type="hidden" name="errorredirect" value="http://www.icontact.com/www/signup/error.html">
@@ -140,10 +139,11 @@ your startup’s <span class="highlight">Minimum Viable Product</span>.</p>
                     <input type="text" name="fields_phone">
                 </div>
     	    	<div class="right">
+					<p>Enter a quick summary of your product idea here. If we select yours, then our team will build your product, live, at the workshop! All submissions will be reviewed by our team in advance, and so everyone receives free consulting.</p>
                 	<span>Your Idea*</span>
                     <textarea name="fields_startupidea" cols="" rows=""></textarea>
 					<span>Are you considering attending?</span>
-					<input type="checkbox" id="fields_potentialattendee" name="fields_potentialattendee"> <label for="fields_potentialattendee"></label>
+					<input type="checkbox" id="fields_potentialattendee" name="fields_potentialattendee"> <label for="fields_potentialattendee">Yes! I am considering it.</label>
 					<input type="hidden" name="listid" value="48292">
 				    <input type="hidden" name="specialid:48292" value="68I6">
 
@@ -198,11 +198,38 @@ your startup’s <span class="highlight">Minimum Viable Product</span>.</p>
             <!--SUBMIT FORM-->
             <div class="newsWrap">
                 <span>Sign Up for exclusive news</span>
-                <form action="" method="get">
-                    <input name="email" type="text" value="">
-                    <input class="textSubmitGrey" name="signUp" type="submit" value="">
+                <form method="post" action="https://app.icontact.com/icp/signup.php" name="icpsignup" id="icpsignup5183" accept-charset="UTF-8" onsubmit="return verifyRequired5183();" >
+					<input type="hidden" name="redirect" value="http://www.icontact.com/www/signup/thanks.html">
+					<input type="hidden" name="errorredirect" value="http://www.icontact.com/www/signup/error.html">
+                    <input type="text" name="fields_email">
+					<input type="hidden" name="listid" value="48291">
+					    <input type="hidden" name="specialid:48291" value="S0QU">
+
+					    <input type="hidden" name="clientid" value="1114384">
+					    <input type="hidden" name="formid" value="5183">
+					    <input type="hidden" name="reallistid" value="1">
+					    <input type="hidden" name="doubleopt" value="1">
+                    <input class="textSubmit" name="Submit" type="submit" value="">
                 </form>
             </div>
+			<script type="text/javascript">
+
+			var icpForm5183 = document.getElementById('icpsignup5183');
+
+			if (document.location.protocol === "https:")
+
+				icpForm5183.action = "https://app.icontact.com/icp/signup.php";
+			function verifyRequired5183() {
+			  if (icpForm5183["fields_email"].value == "") {
+			    icpForm5183["fields_email"].focus();
+			    alert("The Email field is required.");
+			    return false;
+			  }
+
+
+			return true;
+			}
+			</script>
             <!--SUBMIT FORM-->
 
     	</article>
