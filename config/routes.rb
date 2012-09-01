@@ -1,5 +1,6 @@
 DareToBeLean::Application.routes.draw do
   get "landing/index"
+  get "landing/thanks"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

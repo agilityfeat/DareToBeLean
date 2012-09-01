@@ -21,18 +21,37 @@ $(document).ready(function(){
 			height: ['650px', 'easeOutBounce'],
 		  },1750, 'linear', function() {
 		  });
-	   	  $('.d2blSlide').fadeOut(750);
-	   	  $('body').addClass("overflow");
-  	});
+	   	  $('.d2blSlide').fadeOut(750, function() {
+		  	$('.slideNavWrap, .slideAjaxWrap').fadeIn(750);
+		  });
+	});
+	
 	$('.btnSignup, .btnLearn, .btnIdeas, .btnWhen').click(function() {
 		$('#slideWrap').css("height","250px");
 		$('.d2blSlide').fadeIn(750);
-	   	$('body').removeClass("overflow");
-
+		$('.slideNavWrap, .slideAjaxWrap').fadeOut(750);
 	});
 
 	//Slide Initiation
+	$('.slideWrap').cycle({ 
+		fx: 'fade',
+		speed: 1500, 
+    	timeout: 0,
+        prev:    '#prev',
+        next:    '#next',
+	});
 	
+	//Slide Ajax Load
+	
+	
+	//BTN Fade
+	$(".normalFade").fadeTo(5, .2);
+
+	$(".normalFade").hover(function() {
+		$(this).stop().fadeTo(200, .65);
+		},function(){
+			$(this).stop().fadeTo(200, .2);;
+	});	
 
 	// Auto Scroll Initiation
 	$.localScroll({
@@ -95,3 +114,5 @@ $(document).ready(function(){
 		}); // window scroll
 	});	// each data-type
 }); // document ready
+
+
