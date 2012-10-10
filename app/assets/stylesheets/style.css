@@ -19,6 +19,7 @@ p {
 span.highlight{
 	font-family:'Open Sans';
 	font-weight:600;
+	font-style:italic;
 }
 /*TOP NAVIGATION*/
 header{
@@ -253,13 +254,63 @@ article{
 	position: absolute;
 	background: url(/assets/bg_long_shadow_top.png) top repeat-x, url(/assets/bg_long_shadow_bottom.png) bottom repeat-x;
 }
-#first article p{
-	width:800px;
-	margin:25px auto;
-	text-align:center;
-}
 #first article .welcomeHeader{
 	height:0;
+}
+
+#first article .homeWrap{
+	width:940px;
+	margin:0 auto;
+}
+
+#first article .homeWrap .homeLeft{
+	width:450px;
+	float:left;
+	margin:60px 0 0;
+}
+#first .homeWrap .homeLeft p{
+	margin:25px auto;
+	text-align:center;
+	font-size:17px;
+}
+#first .homeWrap .homeRight{
+	width:300px;
+	float:left;
+	margin:50px 0 50px 80px;
+	padding:25px;
+	text-align:center;
+	background: url(/assets/white50Trans.png);
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+#first .homeWrap .homeRight p{
+	font-size:18px;
+}
+#first .homeWrap .homeRight p span{
+	font-size:24px;
+	margin:10px 0;
+}
+#first .homeWrap .homeRight h1.supEarBid{
+	background:url(/assets/superEarlyBid.png) center;
+	display:block;
+	margin:0 auto;
+	width:290px;
+	height:40px;
+}
+
+#first .homeWrap .homeRight a{
+	display:block;
+	width:274px;
+	height:62px;
+	margin:20px auto 0;
+	background:url(/assets/formSprite.png);
+	background-position:0 -622px;
+}
+#first .homeWrap .homeRight a:hover{
+	background:url(/assets/formSprite.png);
+	background-position:0 -684px;
+
 }
 
 /* #second */
