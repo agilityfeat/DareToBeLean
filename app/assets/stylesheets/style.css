@@ -429,7 +429,7 @@ article{
 /* fourth */
 #fourth article {	
 	width: 100%; 
-	height:700px;
+	height:1200px;
 	top:0;
 	padding-top:150px;
 	position: absolute;
@@ -444,7 +444,7 @@ article{
 
 #fourth .smashinglogoC {
 	background: url(/assets/header_when.png) 50% -750px no-repeat fixed;
-	min-height:850px; 
+	min-height:1200px; 
 	padding: 0;
 	margin: 0;
 	width: 100%;
@@ -528,6 +528,55 @@ article{
 	outline:none;
 }
 
+/*Forms*/
+.newsWrapRt{
+}
+.newsWrapRt span{
+	font-family: "Open Sans";
+	font-weight:800;
+	font-size:20px;
+	line-height:42px;
+	color:#6c6c6c;
+}
+.newsWrapRt form{display:inline; text-align:center;}
+.newsWrapRt form input[type="text"]{
+	width:200px;
+	height:42px;
+	margin:0 30px;
+	padding:0 10px;
+	background:url(/assets/formSprite.png) top left no-repeat;
+	border:none;
+	outline:none;
+}
+.newsWrapRt form input:focus[type="text"]{
+	background-position:0 -44px;
+}
 
+.newsWrapRt form input.textSubmit, .newsWrap form input.textSubmitGrey{
+	width:131px;
+	height:44px;
+	background:url(/assets/formSprite.png) no-repeat;
+	background-position:0 -534px;
+	border:none;
+	outline:none;
+}
+.newsWrapRt form input.textSubmit:hover{
+	background-position:-131px -534px;
+}
+.newsWrapRt form input.textSubmitGrey{
+	background-position:0 -578px;
+}
+.newsWrapRt form input.textSubmitGrey:hover{
+	background-position:-131px -578px;
+}
+
+.newsWrapRt form input.textArea{
+	width:130px;
+	height:52px;
+	background:url(/assets/formSprite.png) no-repeat;
+	background-position:0 -318px;
+	border:none;
+	outline:none;
+}
 
 
