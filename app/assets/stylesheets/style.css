@@ -229,7 +229,7 @@ article{
 }
 #first .d2blLogo {
 	background: url(/assets/header_d2bl.png) 50% 100px no-repeat fixed; 
-	min-height: 750px; 
+	min-height: 850px; 
 	padding: 0; 
 	margin: 0; 
 	width: 100%; 
@@ -242,13 +242,13 @@ article{
 	padding: 0; 
 	margin: 0; 
 	width: 100%; 
-	height: 750px; 
+	height: 850px; 
 	position: absolute;
 	top:0;
 }
 #first article {
 	width: 100%; 
-	height:750px;
+	height:850px;
 	padding-top:0;
 	top:0;
 	position: absolute;
@@ -316,11 +316,11 @@ article{
 /* #second */
 #second { padding:0;}
 #second .learnHeader {
-	background: url(/assets/header_learn.png) 50% -730px no-repeat fixed; min-height:750px; padding: 0; margin: 0; width: 100%;}
+	background: url(/assets/header_learn.png) 50% -730px no-repeat fixed; min-height:800px; padding: 0; margin: 0; width: 100%;}
 
 #second article{
 	width: 100%; 
-	height:600px;
+	height:650px;
 	padding-top:150px;
 	top:0;
 	position: absolute;	
@@ -444,7 +444,7 @@ article{
 
 #fourth .smashinglogoC {
 	background: url(/assets/header_when.png) 50% -750px no-repeat fixed;
-	min-height:1200px; 
+	min-height:1350px; 
 	padding: 0;
 	margin: 0;
 	width: 100%;

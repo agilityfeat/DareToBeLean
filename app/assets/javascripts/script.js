@@ -21,21 +21,21 @@ $(document).ready(function(){
 			height: ['650px', 'easeOutBounce'],
 		  },1750, 'linear', function() {
 		  });
-	   	  $('.d2blSlide').fadeOut(750, function() {
-		  	$('.slideNavWrap, .slideAjaxWrap').fadeIn(750);
+	   	  $('.d2blSlide').fadeOut(100, function() {
+		  	$('.slideNavWrap, .slideAjaxWrap').fadeIn(100);
 		  });
 	});
 	
 	$('.btnSignup, .btnLearn, .btnIdeas, .btnWhen').click(function() {
 		$('#slideWrap').css("height","250px");
-		$('.d2blSlide').fadeIn(750);
-		$('.slideNavWrap, .slideAjaxWrap').fadeOut(750);
+		$('.d2blSlide').fadeIn(100);
+		$('.slideNavWrap, .slideAjaxWrap').fadeOut(100);
 	});
 
 	//Slide Initiation
 	$('.slideWrap').cycle({ 
 		fx: 'fade',
-		speed: 1500, 
+		speed: 10, 
     	timeout: 0,
         prev:    '#prev',
         next:    '#next',
@@ -58,7 +58,7 @@ $(document).ready(function(){
 	axis:'y',
 	queue:true,
 	easing: 'easeOutBack', 	
-	duration: 2000,	
+	duration: 1000,	
 	offset: {top:-50, left:0} });
 
 	// Parallax 
